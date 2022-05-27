@@ -1,0 +1,259 @@
+/////// Hem
+
+ // small phone
+
+
+// ipad 
+
+/////// Hem
+
+
+
+@media screen and (max-width: 64rem) {
+    .container {
+        .header {
+            background-size: 64%;
+        }
+    }
+
+    // hom screen
+    html {
+        font-size: 55%;
+    }
+
+    .main-hem {
+        margin: auto 2rem;
+
+        .text-wrapper {
+            h2 {
+                font-size: 4.4rem;
+            }
+        }
+    }
+
+    //nav center
+    ul {
+        li {
+            margin: 5rem 0;
+
+            a {
+
+                svg {
+                    font-size: 8rem;
+                }
+
+                h4 {
+                    font-size: 4.1rem;
+                }
+            }
+        }
+    }
+
+    
+
+    .main-forum {
+        .top-info {
+
+            .top-info_serch {
+                margin-bottom: 2rem;
+
+            }
+        }
+
+    }
+
+    ///// doing first aid on add coment 
+    .container {
+        .main {
+            margin: auto 5rem;
+        }
+    }
+
+    .main {
+        .content_form {
+            .content_form_btn {
+                height: 4rem;
+            }
+
+            textarea {
+                font-size: 3rem;
+            }
+
+            input {
+                font-size: 3rem;
+            }
+
+            input[type='text'] {
+                width: 50rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 52rem) {
+    .container {
+        .header {
+            background-size: 80%;
+        }
+    }
+
+    // hom screen
+    html {
+        font-size: 50%;
+    }
+
+    .main-hem {
+        margin: auto 2rem;
+
+        .text-wrapper {
+            h2 {
+                font-size: 4.4rem;
+            }
+        }
+    }
+
+    //nav center
+    ul {
+        li {
+            margin: 5rem 0;
+
+            a {
+
+                svg {
+                    font-size: 8rem;
+                }
+
+                h4 {
+                    font-size: 4.1rem;
+                }
+            }
+        }
+    }
+
+    // nav corner 
+    
+
+    .main-forum {
+        .top-info {
+
+            .top-info_serch {
+                margin-bottom: 2rem;
+
+            }
+        }
+
+    }
+
+    ///// doing first aid on add coment 
+    .container {
+        .main {
+            margin: auto 5rem;
+        }
+    }
+
+    .main {
+        .content_form {
+            .content_form_btn {
+                height: 4rem;
+            }
+
+            textarea {
+                font-size: 3rem;
+            }
+
+            input {
+                font-size: 3rem;
+            }
+
+            input[type='text'] {
+                width: 50rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 23rem) {
+    .container {
+        .header {
+            background-size: 80%;
+        }
+    }
+
+    // hom screen
+    html {
+        font-size: 30%;
+    }
+
+    .main-hem {
+        margin: auto 2rem;
+
+        .text-wrapper {
+            h2 {
+                font-size: 4.4rem;
+            }
+        }
+    }
+
+    //nav center
+    ul {
+        li {
+            margin: 5rem 0;
+
+            a {
+
+                svg {
+                    font-size: 8rem;
+                }
+
+                h4 {
+                    font-size: 4.1rem;
+                }
+            }
+        }
+    }
+
+   
+
+    .main-forum {
+        .top-info {
+            flex-direction: column;
+            height: 30rem;
+
+            .top-info_serch {
+                margin-bottom: 2rem;
+
+            }
+        }
+
+    }
+
+    ///// doing first aid on add coment 
+    .container {
+        .main {
+            margin: auto 5rem;
+        }
+    }
+
+    .main {
+        .content_form {
+            .content_form_btn {
+                height: 4rem;
+            }
+
+            textarea {
+                font-size: 3rem;
+            }
+
+            input {
+                font-size: 3rem;
+            }
+
+            input[type='text'] {
+                width: 50rem;
+            }
+        }
+    }
+
+}

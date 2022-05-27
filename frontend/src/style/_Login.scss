@@ -1,0 +1,27 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  input {
+    font-size: 2rem;
+    width: 30rem;
+    height: 4.2rem;
+    outline: none;
+    border: none;
+    letter-spacing: 0.1rem;
+
+    margin: 2rem 0rem;
+  }
+  button {
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    padding: 1.3rem 5rem 1.3rem;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,86 @@
+.Error_handling_p {
+  font-size: 1.5rem;
+  color: rgb(95, 37, 37);
+}
+
+.thanks-for-order {
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sumall {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+}
+
+.kassan_toggle {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.4s;
+}
+.checkbox {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.checkbox_Faktura {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.kassan-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  img {
+    border-radius: 2rem;
+    width: 10rem;
+    align-self: flex-start;
+
+    margin: 0 0 0 2rem;
+  }
+  .kassan-amount {
+    font-size: 2rem;
+    height: 3rem;
+    margin-left: 2rem;
+  }
+  &-wraper {
+    &-btn {
+      text-decoration: none;
+      margin: 0 2rem;
+      width: 10rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      font-size: 1.4rem;
+      font-weight: 200;
+      letter-spacing: 0.2rem;
+      outline: 0;
+      border: 1px solid black;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}
+
+.kassan_line {
+  width: 80%;
+  border-radius: 1rem;
+  margin: 0 auto 2rem auto;
+  height: 0.1rem;
+  background-color: rgb(144, 130, 130);
+}

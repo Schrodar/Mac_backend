@@ -1,0 +1,25 @@
+.main-hem {
+  background-color: $color-mainColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 8rem;
+  height: min-content;
+  grid-gap: 2rem;
+  border-radius: 1rem;
+  
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 3.5rem;
+    font-size: 3.7rem;
+    font-family: 'Amatic SC', cursive;
+  }
+}
+
+.center-välkomen {
+  display: flex;
+  justify-content: center;
+}
+
+

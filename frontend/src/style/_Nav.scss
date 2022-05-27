@@ -1,0 +1,42 @@
+.menu-1 {
+  z-index: 1;
+  transform-origin: center;
+  transition: 0.4s ease-in-out;
+  background-color: rgba($color: $color-navOverlay, $alpha: 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0 0 100% 0;
+  box-shadow: 0 0 0 0vh rgba($color: $color-navOverlay, $alpha: 0.75);
+}
+
+.menu-box {
+  position: inherit;
+  height: 1.5rem;
+  width: 2.1rem;
+  top: 2rem;
+  left: 1.5rem;
+  transform-origin: center;
+  transition: 0.4s ease-in-out;
+}
+
+.line {
+  position: absolute;
+  width: 2.5rem;
+  height: 0.15rem;
+  background: #000;
+  transform-origin: center;
+  transition: 0.4s ease-in-out;
+  &-2 {
+    top: 0.5rem;
+    transition: 0.5s ease-in-out;
+  }
+  &-3 {
+    top: 1rem;
+  }
+}
+
+
+

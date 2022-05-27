@@ -1,0 +1,33 @@
+.nav {
+  z-index: 300;
+  transition: all ease 0.4s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  ul {
+    li {
+      display: flex;
+      color: #000;
+      text-decoration: none;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Cutive Mono', monospace;
+        font-size: 5rem;
+        line-height: 1.6;
+
+
+        .icon,
+        .text {
+          font-weight: lighter;
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+

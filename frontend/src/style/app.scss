@@ -1,0 +1,79 @@
+$color-cartBorder: rgb(109, 109, 109);
+$color-containerColor: rgb(89, 99, 89);
+$color-mainColor: rgb(76, 106, 130);
+$color-cartBackgorund: #9d998b;
+$color-forumList: #b2b2b2;
+$color-navOverlay: #9d998b;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.2);
+}
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  font-family: 'Lato' sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: 777;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-rows: 25vh minmax(75vh, min-content);
+  background-color: $color-containerColor;
+  transition: all ease-in-out 1s;
+  overflow: hidden;
+
+  .header {
+    display: grid;
+    background-image: url(../bildstöd/bildsomstod.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+
+  
+  .main {
+    background-color: $color-mainColor;
+    margin: auto 10rem;
+    height: min-content;
+    grid-gap: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+}
+
+.exitcart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+@import './Nav';
+@import './NavLink';
+@import './UpploadShet';
+@import './Kundvagn';
+@import './Shop';
+@import './Kassan';
+@import './Orders';
+@import './Login';
+@import './Hem';
+@import './Forum';
+@import './Mobile';

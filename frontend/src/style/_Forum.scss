@@ -1,0 +1,172 @@
+.main-forum {
+  display: flex;
+  height: min-content;
+  flex-wrap: wrap;
+}
+
+.info-serch {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .arrowBounce {
+    cursor: pointer;
+    animation: arrowBounce 2s ease infinite;
+  }
+  @keyframes arrowBounce {
+    70% {
+      transform: translateX(-30%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+img {
+  height: 10rem;
+}
+
+.Serch-Aktive {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  height: 3rem;
+  justify-content: center;
+  font-size: 2rem;
+  h2 {
+    font-size: 3rem;
+  }
+}
+.wrapper-active-forum {
+  position: relative;
+  background-color: $color-forumList;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.3s;
+  width: 80%;
+  height: min-content;
+  margin: 2rem;
+  border: solid black;
+  border-radius: 2rem;
+}.top-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 100%;
+  transition: all 0.3s;
+
+  .arrowBounce {
+    cursor: pointer;
+    animation: arrowBounce 2s ease infinite;
+  }
+
+  &_serch {
+    width: 40rem;
+    height: 5rem;
+    background-color: white;
+  }
+
+  &_magnify {
+    margin: 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  &_magnify:hover {
+    transform: scale(1.2);
+  }
+
+  &_add_user {
+    right: 4rem;
+    position: absolute;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  &_add_user:hover {
+    transform: scale(1.2);
+  }
+
+  &_add_thread {
+    position: absolute;
+    right: 4.5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  &_add_thread:hover {
+    transform: scale(1.2);
+  }
+}
+.left-post-wrapper {
+  height: min-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.question-div {
+  background-color: $color-containerColor;
+  overflow: hidden;
+  margin: 2rem 5rem;
+}
+
+/* CSS */
+.comment-btn {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
+.comment-btn:hover,
+.comment-btn:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.comment-btn:hover {
+  transform: translateY(-1px);
+}
+
+.comment-btn:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
