@@ -1,4 +1,5 @@
-/* /////// Hem
+
+ /////// Hem
 
  // small phone
 
@@ -9,7 +10,7 @@
 
 
 
-@media screen and (max-width: 64rem) {
+@include  media('<=desktop') {
     .container {
         .header {
             background-size: 64%;
@@ -91,7 +92,7 @@
 
 }
 
-@media screen and (max-width: 52rem) {
+@include media('<=tablet') {
     .container {
         .header {
             background-size: 80%;
@@ -132,7 +133,7 @@
     }
 
     // nav corner 
-    
+
 
     .main-forum {
         .top-info {
@@ -173,22 +174,22 @@
     }
 
 }
- */
-@media screen and (max-width: 23rem) {
-    .root{
+ 
+@include media('<=phone') {
     .container {
         .header {
             background-size: 80%;
         }
     }
-    }
+
 
     // hom screen
-    .root{
-        html {
-            font-size: 30%;
-        }
+
+    html {
+        font-size: 30%;
     }
+
+
 
     .main-hem {
         margin: auto 2rem;
@@ -200,8 +201,9 @@
         }
     }
 
+
     //nav center
-    .root{
+
     ul {
         li {
             margin: 5rem 0;
@@ -213,14 +215,15 @@
                 }
 
                 h4 {
-                    font-size: 4.1rem;
+                    font-size: 4rem;
                 }
             }
         }
     }
 
-    }
-    .root{
+
+
+
     .main-forum {
         .top-info {
             flex-direction: column;
@@ -233,16 +236,18 @@
         }
 
     }
-    }
+
+
     ///// doing first aid on add coment 
-    .root{
+
     .container {
         .main {
             margin: auto 5rem;
         }
     }
-    }
-.root{
+
+
+
     .main {
         .content_form {
             .content_form_btn {
@@ -262,6 +267,4 @@
             }
         }
     }
-
-}
 }

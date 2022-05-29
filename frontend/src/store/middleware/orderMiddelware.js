@@ -10,7 +10,7 @@ const orderMiddelware = ({ dispatch, getState }) => next => async action => {
     next(action)
     const state = getState()
     let token = state.Entities.user.token
-    console.log(state.Entities.orders)
+
     try {
         const respons = await axios.request({
         url,
