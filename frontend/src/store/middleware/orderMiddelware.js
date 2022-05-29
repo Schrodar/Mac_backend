@@ -10,6 +10,7 @@ const orderMiddelware = ({ dispatch, getState }) => next => async action => {
     next(action)
     const state = getState()
     let token = state.Entities.user.token
+    console.log(state.Entities.orders)
     try {
         const respons = await axios.request({
         url,
@@ -17,6 +18,11 @@ const orderMiddelware = ({ dispatch, getState }) => next => async action => {
             Authorization: `Bearer ${token}` 
         }
         })
+        
+        if(state.Entities.orders.length !== 0){
+            throw new Error
+        }
+
         if(onSucssess)
             dispatch({type: onSucssess, payload: respons.data})
 

@@ -1,4 +1,4 @@
-/////// Hem
+/* /////// Hem
 
  // small phone
 
@@ -173,17 +173,21 @@
     }
 
 }
-
+ */
 @media screen and (max-width: 23rem) {
+    .root{
     .container {
         .header {
             background-size: 80%;
         }
     }
+    }
 
     // hom screen
-    html {
-        font-size: 30%;
+    .root{
+        html {
+            font-size: 30%;
+        }
     }
 
     .main-hem {
@@ -197,6 +201,7 @@
     }
 
     //nav center
+    .root{
     ul {
         li {
             margin: 5rem 0;
@@ -214,8 +219,8 @@
         }
     }
 
-   
-
+    }
+    .root{
     .main-forum {
         .top-info {
             flex-direction: column;
@@ -228,14 +233,16 @@
         }
 
     }
-
+    }
     ///// doing first aid on add coment 
+    .root{
     .container {
         .main {
             margin: auto 5rem;
         }
     }
-
+    }
+.root{
     .main {
         .content_form {
             .content_form_btn {
@@ -256,4 +263,5 @@
         }
     }
 
+}
 }
