@@ -74,7 +74,7 @@ const Kassan = ({toggle}) => {
             <div className="main">
               <Toggle className="kassan_toggle" title={"Din Bestälning bearbetas"} id="5">
                     <div className="thanks-for-order">
-                        <h2>Is Loading... bip bip bop bop</h2>
+                        <h2>Loading... bip bip bop bop</h2>
                     </div>
                 </Toggle>
             </div>
