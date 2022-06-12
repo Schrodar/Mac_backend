@@ -18,7 +18,11 @@ app.options('*', cors());
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
+<<<<<<< HEAD
     res.setHeader('Access-Control-Allow-Origin', 'http://www.bildsomstod.se',);
+=======
+    res.setHeader('Access-Control-Allow-Origin','http://www.bildsomstod.se');
+>>>>>>> 17e513a18a49254e0d289d945392f15f99322c08
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT,');
