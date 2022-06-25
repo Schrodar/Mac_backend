@@ -83,6 +83,8 @@ const Nav = ({toggle, getToggle}) => {
         }
     }
   
+    // set color of box shadow to same as hamburger menyu nav  !!! 
+
     function Style3 () {
         if(!toggle === false){
             return({
