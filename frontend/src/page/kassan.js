@@ -33,7 +33,7 @@ const Kassan = ({toggle}) => {
             }
         }
         cartCont.push(data);
-        axios.post("http://www.bildsomstod.se/v1/orders", cartCont)
+        axios.post("https://www.bildsomstod.se/v1/orders", cartCont)
         .then(function(respons) {
             if(respons.status === 201){
                 console.log("dispatichng")
