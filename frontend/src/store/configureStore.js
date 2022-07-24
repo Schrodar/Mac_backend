@@ -22,6 +22,7 @@ import orderIsSent from "./middleware/setOrderSent";
 import getSiteData from "./middleware/pageData"
 import getThreadImg from './middleware/getThreadImg';
 import resetOrderOpen from './middleware/setOrderOpen'
+import deletShopItems from "./middleware/deletShopItems";
 
 const store = configureStore({
   reducer: enteties,
@@ -46,7 +47,8 @@ const store = configureStore({
     orderIsSent,
     getSiteData,
     getThreadImg,
-    resetOrderOpen
+    resetOrderOpen,
+    deletShopItems
   ]
 });
 

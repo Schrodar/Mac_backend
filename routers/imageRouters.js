@@ -8,6 +8,7 @@ router
 .route('/') // the slash is  =  '/v1/pictures'
 .get(getPictures)
 .post(upload.single('img') ,postPictures, errorHandler )
+.delete(deletePicturs)
 
 
 router

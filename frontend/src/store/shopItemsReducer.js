@@ -6,7 +6,8 @@ import {
     addToCountBegan,
     addToCountFailed,
     substractToCountBegan,
-    substractToCountFailed
+    substractToCountFailed,
+    deleteShopItemsBegan
 } from "./createAction";
 import { createSlice } from "@reduxjs/toolkit";
 
@@ -70,6 +71,11 @@ export const openMeny = (data) => openMenyBegan({
     onError: openMenyFailed.type
 });
 
+export const deleteItems = (data) => deleteShopItemsBegan({
+    url,
+    method: 'delete',
+    data
+})
 
   
 

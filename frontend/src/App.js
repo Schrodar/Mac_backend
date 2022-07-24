@@ -19,6 +19,8 @@ import Forum from "./page/forum";
 import ForumThread from "./components/ForumThread";
 import AddThread from "./page/AddThread";
 import { getSiteData } from "./store/siteImg"
+import is from "sharp/lib/is";
+import Remove from "./page/remove";
 
 function App() {
 
@@ -55,6 +57,7 @@ function App() {
       <Kundvagn /> 
       <Routes>
         {isLogedIn && <Route exact path="/ordrar" element={ <Ordrar />} />}
+        {isLogedIn && <Route exact path="/remove" element={ <Remove />} />}
         <Route exact path="/nyproduct" element={ <BildeForm toggle={toggle} /> } />
         <Route exact path="/shop" element={ <Shop toggle={toggle} />} />
         <Route exact path="/" element={ <Valkomen toggle={toggle} />} />

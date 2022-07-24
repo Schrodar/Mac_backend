@@ -34,7 +34,14 @@ export const skickaBildData = (data) => action.sendImagBegan({
     onError: action.sendImageFailed.type
 });
 
-
+export const deleteItems = (data) => action.deleteShopItemsBegan({
+    
+    url: "/v1/pictures",
+    method: 'DELETE',
+    data,
+    onSuccess: action.deleteShopItemsSuccess.type,
+    onError: action.deleteShopItemsFailed.type
+})
 
 
 

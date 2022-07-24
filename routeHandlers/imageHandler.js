@@ -1,7 +1,8 @@
 const sharp = require('sharp');
 const multer = require('multer');
 const Bild = require('../models/image')
-const SiteImg = require('../models/sitePictures')
+const SiteImg = require('../models/sitePictures');
+const { findByIdAndDelete } = require('../models/image');
 
 exports.getPictures = async (req, res) => {
       
@@ -105,6 +106,14 @@ exports.errorHandler = (error, req, res, next) => {
    }
 
 
-exports.deletePicturs = (req, res) => {
-    res.sendStatus(200)
+exports.deletePicturs = async (req, res) => {
+      try{
+        console.log(req.body.id)
+        const id = req.body.id
+        const bild = await findByIdAndDelete(id);
+        res.status(200).send(bild)
+    } catch (err) {
+            res.status(400).send(err)
+    }  
 }
+

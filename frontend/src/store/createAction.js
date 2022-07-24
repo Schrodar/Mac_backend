@@ -62,5 +62,10 @@ export const test1Began = createAction('middelware/getPageDataFailed');
 export const getThreadImgBegan = createAction('middelware/getThreadImgBegan');
 export const getThreadImgFailed = createAction('middelware/getThreadImgFailed');
 
-export const resetOpenBegan = createAction('middelware/resetOpenBegan')
-export const resetOpenFailed = createAction('middelware/resetOpenFaild')
+export const resetOpenBegan = createAction('middelware/resetOpenBegan');
+export const resetOpenFailed = createAction('middelware/resetOpenFaild');
+
+
+export const deleteShopItemsBegan = createAction('middelware/DeletShopItemsBegan');
+export const deleteShopItemsSuccess = createAction('middelware/DeletShopItemsSuccess');
+export const deleteShopItemsFailed = createAction('middelware/DeletShopItemsFailed');
