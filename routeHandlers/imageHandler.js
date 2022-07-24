@@ -2,7 +2,7 @@ const sharp = require('sharp');
 const multer = require('multer');
 const Bild = require('../models/image')
 const SiteImg = require('../models/sitePictures');
-const { findByIdAndDelete } = require('../models/image');
+const { findByIdAndDelete, findById } = require('../models/image');
 
 exports.getPictures = async (req, res) => {
       
@@ -110,8 +110,10 @@ exports.deletePicturs = async (req, res) => {
       try{
         
         const id = req.body.id
-        const bild = await findByIdAndDelete({_id: id});
-        res.status(200).send(bild)
+        const bild = await findById({_id: id}) 
+        console.log(bild) 
+        await findByIdAndDelete({_id: id});
+        res.status(200)
     } catch (err) {
             res.status(400).send(err)
     }  
