@@ -108,9 +108,9 @@ exports.errorHandler = (error, req, res, next) => {
 
 exports.deletePicturs = async (req, res) => {
       try{
-        console.log(req.body.id)
+        
         const id = req.body.id
-        const bild = await findByIdAndDelete(id);
+        const bild = await findByIdAndDelete({_id: id});
         res.status(200).send(bild)
     } catch (err) {
             res.status(400).send(err)
