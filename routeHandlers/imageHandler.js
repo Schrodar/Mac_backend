@@ -110,9 +110,7 @@ exports.deletePicturs = async (req, res) => {
       try{
         
         const id = req.body.id
-        const bild = await findById({_id: id}) 
-        console.log(bild) 
-        await findByIdAndDelete({_id: id});
+        await Bild.findByIdAndDelete({_id: id});
         res.status(200)
     } catch (err) {
             res.status(400).send(err)
