@@ -142,7 +142,7 @@ const Nav = ({toggle, getToggle}) => {
                            <FaWrench className="icon"  /> <h4 className="text">Login</h4>
                         </Link>
                     </li>}
-                    {!isLogedIn && <li>
+                    {isLogedIn && <li>
                         <Link to="/remove" onClick={() => getToggle(toggle)}>
                            <FaTrash className="icon"  /> <h4 className="text">Shope Remover</h4>
                         </Link>
