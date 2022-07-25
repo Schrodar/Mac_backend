@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaTrash } from 'react-icons/fa'
 import { useDispatch, useSelector } from "react-redux";
 import { openMeny } from "../store/shopItemsReducer";
 import { FaHome, FaRegImages, FaWrench, FaPlusCircle } from "react-icons/fa";
@@ -139,6 +140,11 @@ const Nav = ({toggle, getToggle}) => {
                     {!isLogedIn && <li>
                         <Link to="/login" onClick={() => getToggle(toggle)}>
                            <FaWrench className="icon"  /> <h4 className="text">Login</h4>
+                        </Link>
+                    </li>}
+                    {!isLogedIn && <li>
+                        <Link to="/remove" onClick={() => getToggle(toggle)}>
+                           <FaTrash className="icon"  /> <h4 className="text">Shope Remover</h4>
                         </Link>
                     </li>}
 
