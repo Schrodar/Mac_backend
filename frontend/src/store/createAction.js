@@ -4,7 +4,10 @@ export const addCartBegan = createAction("middelware/addCartBegan");
 export const addCartFailed = createAction("middelware/addCartFailed");
 
 export const getShopItemsBegan = createAction("middelware/getShopItemsBegan");
-export const getShopItemsFailed = createAction("middelware/getShopItems");
+export const getShopItemsFailed = createAction("middelware/getShopItemsfailed");
+
+export const getShopItemBegan = createAction("middelware/getShopItemBegan");
+export const getShopItemFailed = createAction("middelware/getShopItemFailed");
 
 export const addAmountBegan = createAction("middelware/addAmountBegan");
 export const addAmountFailed = createAction("middelware/addAmountFailed");

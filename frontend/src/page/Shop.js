@@ -48,7 +48,7 @@ return (
     <div className="main" style={inMenu()}>
         <div className="over-main">        
         
-        <h2 className="center-välkomen-shop" style={{"fontSize": "3rem", }}>BILDBANK </h2>
+        <h2 className="center-välkomen-shop">BILDBANK </h2>
 
         <h4 className="text-shop">Det här är bildbanken där du finner vårt utbud av bilder. Tryck för att lägga önskad bild i kundvagnen.
          <br></br>Om du vill anpassa en bild efter dina önskemål, skriv det i orden vid beställning. 

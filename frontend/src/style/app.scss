@@ -1,6 +1,6 @@
 $color-cartBorder: rgb(109, 109, 109);
 $color-containerColor: rgb(89, 99, 89);
-$color-mainColor: rgb(76, 106, 130);
+$color-mainColor: rgb(174, 139, 15);
 $color-cartBackgorund: #9d998b;
 $color-forumList: #b2b2b2;
 // nav overlay needs to be set under components nav also to be working properly!
@@ -69,6 +69,7 @@ body {
   opacity: 0;
 }
 @import './ScssGod';
+@import './Remove';
 @import './Nav';
 @import './NavLink';
 @import './UpploadShet';

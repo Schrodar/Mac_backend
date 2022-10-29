@@ -7,7 +7,6 @@ const cartReset = ({dispatch}) => next => async action => {
 
     next(action)
     try {
-        console.log("in middeleware cartReset")
 
         dispatch({type: onSuccess})
 

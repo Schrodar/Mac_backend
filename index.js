@@ -15,7 +15,7 @@ const app = express();
 app.use(cors());
 app.options('*', cors());
 
-app.use(function (req, res, next) {
+/* app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin','http://www.bildsomstod.se');
@@ -32,7 +32,7 @@ app.use(function (req, res, next) {
 
     // Pass to next layer of middleware
     next();
-});
+}); */
 
 app.use(express.json());
 app.use('/v1/pictures', imageRouter);

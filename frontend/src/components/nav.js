@@ -6,7 +6,7 @@ import { openMeny } from "../store/shopItemsReducer";
 import { FaHome, FaRegImages, FaWrench, FaPlusCircle } from "react-icons/fa";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { GiLetterBomb } from "react-icons/gi";
-import { number } from "sharp/lib/is";
+
 
 const Nav = ({toggle, getToggle}) => {
 

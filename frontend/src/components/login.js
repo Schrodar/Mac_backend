@@ -1,34 +1,45 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Toggle from "./toggle";
-import { logginBegan } from "../store/loginReducer"
+import { logginBegan, wrongPwdReseter } from "../store/loginReducer"
 import { useDispatch, useSelector } from "react-redux";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { loadingDuringAwait } from "../store/upploadingReducer";
 
 const Login = () => {
     const isLoggedIn = useSelector(state => state.Entities.user.isLoggedIn)
-    const isLoading = useSelector(state => state.Entities.uploadHandling.loading)
-    const   [password, setPasword] = useState("passowrd");
-    const   [email, setEmail] = useState("email")
-    const   dispatch = useDispatch()
+    const failed = useSelector(state => state.Entities.user.failed)
 
+    const isLoading = useSelector(state => state.Entities.uploadHandling.loading)
+    const [password, setPasword] = useState("");
+    const [email, setEmail] = useState("")
+    const dispatch = useDispatch()
+
+  const handleKeyDown = event => {
+
+    if (event.key === 'Enter') {
+      loginHandler(event)
+    }
+  };
 
     const payload = {
         loading: true
     }
         
-    const emailHandler = (e) => {
+    const emailHandler = e => {
         setEmail(e.target.value)
     }
         const passwordHandler = (e) => {
         setPasword(e.target.value)
     }
 
-    const loginHandler = (e) => {
+    const loginHandler = e => {
         e.preventDefault();
-        
         dispatch(logginBegan({email, password}));
         dispatch(loadingDuringAwait(payload));
+    }
+
+    const resetWrongPwd = () => {
+        dispatch(wrongPwdReseter())
     }
 
 
@@ -51,10 +62,12 @@ const Login = () => {
         <div className="main">
               <Toggle className="kassan_toggle" title={"Login"} id="6">
                     <div className="login">
-                        <input type="text" placeholder="email" onChange={emailHandler} />
-                        <input type="password" placeholder="password" onChange={passwordHandler} />
+                        <input type="text" placeholder="email" onChange={emailHandler} onKeyDown={handleKeyDown} />
+                        <input type="password" placeholder="password" onFocus={resetWrongPwd} onChange={passwordHandler} onKeyDown={handleKeyDown} />
                         <button onClick={loginHandler}>Login</button>
-                        <div style={{margin: "3rem auto", position: "relative", }}>
+
+                        <div className="LoadingLogin">
+                            {failed && <div className="wrongPwd">Wrong password or username </div>}
                             {isLoading && <div className="spin"></div>} 
                         </div>
                     </div>

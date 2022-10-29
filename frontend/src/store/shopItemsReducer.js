@@ -7,8 +7,11 @@ import {
     addToCountFailed,
     substractToCountBegan,
     substractToCountFailed,
-    deleteShopItemsBegan
+    deleteShopItemsBegan,
+    getShopItemBegan,
+    getShopItemFailed
 } from "./createAction";
+
 import { createSlice } from "@reduxjs/toolkit";
 
 const url = "/v1/pictures"
@@ -17,7 +20,8 @@ const slice = createSlice({
     name: 'shopItemsReducer',
     initialState: {
         shopItems: [],
-        nav: false
+        nav: false,
+        item: {}
     },
     reducers: {
         getShopItems: (shop, action) => {
@@ -31,7 +35,11 @@ const slice = createSlice({
         },
         displayCardAmount: (card, action) => {
             card.shopItems[action.payload.index].cartActive = action.payload.Boolean
+        },
+        toBeDeleted: (state, action) => {
+            state.item = action.payload
         }
+
     },
 
 });
@@ -40,7 +48,8 @@ export const {
         getShopItems,
         cartOpen,
         shopCard,
-        displayCardAmount
+        displayCardAmount,
+        toBeDeleted
     } = slice.actions
 
 export default slice.reducer;
@@ -77,7 +86,13 @@ export const deleteItems = (data) => deleteShopItemsBegan({
     data
 })
 
-  
+export const getItem = (data) => getShopItemBegan({
+    data,
+    method: "PUT",
+    url: "/produkt",
+    onSuccess: toBeDeleted.type,
+    onError: getShopItemFailed.type
+})
 
 
   

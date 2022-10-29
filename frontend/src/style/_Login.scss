@@ -25,3 +25,11 @@
     margin-top: 1rem;
   }
 }
+.LoadingLogin{
+  position: relative;
+  margin: 3rem auto;
+  .wrongPwd{
+    font-size: 2rem;
+    color: black;
+  }
+}

@@ -12,10 +12,11 @@ const getShopItemsMiddelware = ({ dispatch }) => next => async action => {
    
 
     next(action)
+    
+
     try {
         const respons = await axios.request({
         url,
-
         })
         if (onSuccess)
             dispatch({ type: onSuccess, payload: respons.data});

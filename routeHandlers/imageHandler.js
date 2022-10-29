@@ -15,6 +15,18 @@ exports.getPictures = async (req, res) => {
 
 }
 
+exports.getProduct = async (req, res) => {
+
+    
+    try {
+        console.log(req.body.id);
+        const product = await Bild.findById(req.body.id)
+        res.status(200).send(product)
+    } catch (error) {
+        console.log(error)
+    }
+} 
+
 
 exports.getSiteImg = async (req, res) => {
       
@@ -67,11 +79,6 @@ exports.errorHandler = (error, req, res, next) => {
    }
 
 
-exports.deletePicturs = (req, res) => {
-    res.sendStatus(200)
-}
-
-
  
 exports.postPictures = async (req, res) => {
     
@@ -107,8 +114,7 @@ exports.errorHandler = (error, req, res, next) => {
 
 
 exports.deletePicturs = async (req, res) => {
-    const obj = await Bild.findById({_id: req.body.id});
-    console.log(obj)
+    
       try{
         
         const id = req.body.id
