@@ -4,7 +4,7 @@
   "description": "bildsomstod Backend",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider npm-run-all node server.js",
+    "start": "node server.js",
     "start-dev": "nodemon server.js",
     "client": "npm start --prefix frontend",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
