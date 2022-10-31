@@ -89,10 +89,7 @@ export const deleteItems = (data) => deleteShopItemsBegan({
 export const getItem = (data) => getShopItemBegan({
     data,
     method: "PUT",
-    url: "/produkt",
+    url: "/v1/pictures/produkt",
     onSuccess: toBeDeleted.type,
     onError: getShopItemFailed.type
 })
-
-
-  
